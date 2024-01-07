@@ -5,11 +5,11 @@ const Counter = () => {
 
   const dispatch = useDispatch();
   const counter = useSelector(state => state.counter);
-  
+
   const toggleCounterHandler = () => {};
 
   const incrementHandler = ()=>{
-    dispatch({type:'incrementby2'});
+    dispatch({type:'incrementby2', amount: 2});
   }
 
   const decrementHandler = ()=>{
